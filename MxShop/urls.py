@@ -13,15 +13,22 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import xadmin
 from django.contrib import admin
 from django.urls import path, re_path, include
 from django.conf.urls import url
 from django.views.static import serve
 from rest_framework.documentation import include_docs_urls
-import xadmin
+from rest_framework.routers import DefaultRouter
 
 from mxonline.settings import MEDIA_ROOT
-from goods.views import GoodsListView
+from goods.views import GoodsListViewSet
+
+#配置goods的url
+router.register(r'goods', GoodsListViewSet)
+# good_list = GoodsListViewSet.as_view({
+#     'get': 'list',
+# })
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,7 +37,8 @@ urlpatterns = [
     path('docs/', include_docs_urls(title='生鲜')),
     url(r'^api-auth/', include('rest_framework.urls'))
 
-    path('goods/', GoodsListView.as_view(), name='goods-list'),
+    # path('goods/', good_list, name='goods-list'),
+    path('', include(router.urls)),
 
     path('media/(?p<path>.*)', serve, {'document_root': MEDIA_ROOT})
 ]
