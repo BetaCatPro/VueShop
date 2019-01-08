@@ -1,0 +1,11 @@
+GenericViewSet(viewset)			--drf
+	GenericAPIView					--drf
+		APIView							--drf
+			View							    --django
+
+mixins.py
+	CreateModelMixin
+	ListModelMixin
+	UpdateModelMixin
+	RetrieveModelMixin
+	DestroyModelMixin
