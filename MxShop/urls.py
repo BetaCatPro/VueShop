@@ -21,7 +21,7 @@ from django.views.static import serve
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 
-from mxonline.settings import MEDIA_ROOT
+from MxShop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewset
 
 router = DefaultRouter()
@@ -37,10 +37,10 @@ urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     path('ueditor', include('DjangoUeditor.urls')),
     path('docs/', include_docs_urls(title='生鲜')),
-    url(r'^api-auth/', include('rest_framework.urls'))
+    url(r'^api-auth/', include('rest_framework.urls')),
 
     # path('goods/', good_list, name='goods-list'),
     path('', include(router.urls)),
 
-    path('media/(?p<path>.*)', serve, {'document_root': MEDIA_ROOT})
+    url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
 ]

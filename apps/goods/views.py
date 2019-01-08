@@ -9,7 +9,7 @@ from rest_framework import viewsets
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.throttling import UserRateThrottle
 
-from rest_framework_extensions.cache.mixins import CacheResponseMixin
+# from rest_framework_extensions.cache.mixins import CacheResponseMixin
 
 from .models import Goods, GoodsCategory, HotSearchWords, Banner
 from .filters import GoodsFilter
@@ -26,7 +26,7 @@ class GoodsPagination(PageNumberPagination):
     max_page_size = 100
 
 
-class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
     商品列表页, 分页， 搜索， 过滤， 排序
     """

@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e73edde-fe4e-4827-8a88-3cadf198dac2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/goods/serializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/trade/migrations/0002_auto_20190105_2119.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/user_operation/migrations/0002_auto_20190105_2119.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock/banner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock/hotSearch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock/newOpro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/mock/mock/seriesList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/npm-debug.log.2197190737" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/npm-debug.log.283254658" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/npm-debug.log.2984282014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/postcss.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/proxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/App.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/api/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/api/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/axios/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/associateFile/associateFile.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/cloud-cooperation/cloud-cooperation.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/contextmenu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/contextmenu.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/contextmenu2.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/eachContextmenuDom.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/control/control-bar.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/current-loc/current-loc.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/drag/drag.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/layout/layout.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/list-nav/listNav.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/list-sort/images/search-page-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/list-sort/listSort.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/loading/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/loading/loading.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/loading2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/loading2/loading.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/menu/menu-list.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/nodata/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/nodata/nodata.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/page/page.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/price-range/images/search-page-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/price-range/priceRange.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/10_thumb_G_1448944572962.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/11_thumb_G_1448944388914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/1460440720430642585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/1_thumb_G_1449024889033.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/2_thumb_G_1448945810147.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/3_thumb_G_1448945490826.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/47_thumb_G_1448946213633.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/4_thumb_G_1448945381841.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/6_thumb_G_1448945167914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/7_thumb_G_1448945104346.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/8_thumb_G_1448945032585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/9_thumb_G_1448944791708.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/gotop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/kefuweixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/nextpage-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/qq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/wangwang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/weixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/productList.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/result-list/result-list.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/common/tag/tag-filter.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/heighchart/bar/line-bar/line_bar.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/components/heighchart/circle/circle/circle.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/router/getQueryString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/router/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/alipay.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088788518670880.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088848823694266.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088901458193225.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088957941770398.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089137240745101.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089235904530709.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089297229428349.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089358084135937.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/logo2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/head/webintro-ico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/indexNew/1460440788951670189.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/indexNew/1_thumb_G_1449024889033.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/indexNew/49_thumb_G_1448162819357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/dig_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/loginBg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/other-login-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_l.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_l_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_r_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/flow_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/flow_logo.png-bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/kong.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/page-step-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/new/xinpin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/dig_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/loginBg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_l.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_l_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_r_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/10_thumb_G_1448944572962.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/11_thumb_G_1448944388914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447704649936189900.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447704682791039878.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447705943471297107.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706000795527048.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706093179659152.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706126626614178.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706160927101013.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706206565420819.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449010433801562396.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449010763793377576.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449011954874068927.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449012797850565666.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/21_thumb_G_1448946793103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/22_thumb_G_1448946729918.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/24_thumb_G_1448948023508.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/25_thumb_G_1448947875633.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/26_thumb_G_1448947825794.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/27_thumb_G_1448947771206.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/28_thumb_G_1448947699187.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/29_thumb_G_1448947631664.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/31_thumb_G_1448948598408.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/32_thumb_G_1448948525255.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/33_thumb_G_1448948479944.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/34_thumb_G_1448948399017.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/35_thumb_G_1448948333567.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/36_thumb_G_1448948234706.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/45_thumb_G_1448946661697.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/46_thumb_G_1448946598227.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/47_thumb_G_1448946213633.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/48_thumb_G_1448943988607.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/50_thumb_G_1448946542088.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/51_thumb_G_1448946466261.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/53_thumb_G_1495068879139.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/9_thumb_G_1448944791708.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/flow_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/kong.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/page-step-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/webintro-ico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/js/clickoutside.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/js/cloneObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/js/cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/js/meteor.exec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/iview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/iview.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/iview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/store/actions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/store/getters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/store/mutation-types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/store/mutations.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/store/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/common.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/confing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo_fontclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo_symbol.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo_unicode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/app/app.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/cart/cart.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/cart/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/cart/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/footer/footer.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/head/head.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/head/shophead.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/home/home.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/index/banners.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/index/index.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/index/new.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/index/series-list.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/current-loc/current-loc.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/list-nav/listNav.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/list-sort/images/search-page-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/list-sort/listSort.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/list.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/page/page.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/price-range/images/search-page-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/price-range/priceRange.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/10_thumb_G_1448944572962.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/11_thumb_G_1448944388914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/1460440720430642585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/1_thumb_G_1449024889033.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/2_thumb_G_1448945810147.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/3_thumb_G_1448945490826.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/47_thumb_G_1448946213633.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/4_thumb_G_1448945381841.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/6_thumb_G_1448945167914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/7_thumb_G_1448945104346.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/8_thumb_G_1448945032585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/9_thumb_G_1448944791708.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/gotop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/kefuweixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/nextpage-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/qq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/wangwang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/weixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/productList.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/login/login.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/loginHead/loginHead.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/collection.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/member-menu.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/member.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/message.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/order.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/orderDetail.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/receive.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/member/userinfo.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/current-loc/current-loc.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/hotSales.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/10_thumb_G_1448944572962.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/11_thumb_G_1448944388914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1460440720430642585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/16_thumb_G_1448947194349.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889018.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889264.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889287.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889726.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889889.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449024889033.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449025104251.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449025115783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449025126133.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889543.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889686.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889723.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889757.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889930.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/21_thumb_G_1448946793103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/30_thumb_G_1448948662661.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/33_thumb_G_1448948479944.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/34_thumb_G_1448948399017.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/36_thumb_G_1448948234706.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/42_thumb_G_1448948895152.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/47_thumb_G_1448946213633.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/48_thumb_G_1448943988607.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/49_thumb_G_1448162819357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/53_thumb_G_1495068879139.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/a6467458df916b1a7d2db267b0303c68_1_P_1449024889264.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/default_45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/e721c85cefe59b66b8845ae4f85990cb_1_P_1449024889726.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/footprint-arr (1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/footprint-arr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/gotop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/10_thumb_G_1448944572962.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/11_thumb_G_1448944388914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1460440720430642585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/16_thumb_G_1448947194349.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889018.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889264.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889287.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889726.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889889.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449024889033.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449025104251.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449025115783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449025126133.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889543.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889686.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889723.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889757.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889930.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/21_thumb_G_1448946793103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/30_thumb_G_1448948662661.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/33_thumb_G_1448948479944.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/34_thumb_G_1448948399017.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/36_thumb_G_1448948234706.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/42_thumb_G_1448948895152.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/47_thumb_G_1448946213633.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/48_thumb_G_1448943988607.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/49_thumb_G_1448162819357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/53_thumb_G_1495068879139.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/a6467458df916b1a7d2db267b0303c68_1_P_1449024889264.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/default_45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/e721c85cefe59b66b8845ae4f85990cb_1_P_1449024889726.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/footprint-arr (1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/footprint-arr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/gotop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/kefuweixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/loading_nala.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/qq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/seemore-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/wangwang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/weixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/zt_cart_bg05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/kefuweixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/loading_nala.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/qq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/seemore-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/wangwang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/weixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/zt_cart_bg05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/model.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/productDetail.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/src/views/register/register.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-store/webpack.prod.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxShop/settings.py" afterPath="$PROJECT_DIR$/MxShop/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxShop/urls.py" afterPath="$PROJECT_DIR$/MxShop/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/goods/__init__.py" afterPath="$PROJECT_DIR$/apps/goods/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/goods/apps.py" afterPath="$PROJECT_DIR$/apps/goods/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/goods/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/apps/goods/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/goods/views.py" afterPath="$PROJECT_DIR$/apps/goods/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/trade/__init__.py" afterPath="$PROJECT_DIR$/apps/trade/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/trade/apps.py" afterPath="$PROJECT_DIR$/apps/trade/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/trade/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/apps/trade/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/user_operation/apps.py" afterPath="$PROJECT_DIR$/apps/user_operation/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/user_operation/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/apps/user_operation/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/__init__.py" afterPath="$PROJECT_DIR$/apps/users/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/apps.py" afterPath="$PROJECT_DIR$/apps/users/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/apps/users/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extra_apps/xadmin/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/extra_apps/xadmin/migrations/0001_initial.py" />
+    </list>
+    <ignored path="MxShop.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="MxShop" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="import_category_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_goods_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db_tools/import_goods_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34896812">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="258" />
+    <option name="y" value="22" />
+    <option name="width" value="1368" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MxShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MxShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MxShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MxShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MxShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db_tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Python.import_goods_data">
+    <configuration default="false" name="import_category_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/import_category_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="import_goods_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MxShop" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.import_category_data" />
+      <item index="1" class="java.lang.String" itemvalue="Python.import_goods_data" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.import_goods_data" />
+        <item index="1" class="java.lang.String" itemvalue="Python.import_category_data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e73edde-fe4e-4827-8a88-3cadf198dac2" name="Default" comment="" />
+      <created>1546941253601</created>
+      <option name="number" value="Default" />
+      <updated>1546941253601</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="258" y="22" width="1368" height="1000" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.260574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tools/import_goods_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tools/import_goods_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34896812">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
