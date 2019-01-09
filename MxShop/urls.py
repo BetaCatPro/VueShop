@@ -26,8 +26,8 @@ from goods.views import GoodsListViewSet, CategoryViewset
 
 router = DefaultRouter()
 #配置goods的url
-router.register(r'goods', GoodsListViewSet)
-router.register(r'category', CategoryViewset)
+router.register(r'goods', GoodsListViewSet, base_name="goods")
+router.register(r'categorys', CategoryViewset, base_name="categorys")
 # good_list = GoodsListViewSet.as_view({
 #     'get': 'list',
 # })
@@ -36,7 +36,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     path('ueditor', include('DjangoUeditor.urls')),
-    path('docs/', include_docs_urls(title='生鲜')),
+    url(r'docs/', include_docs_urls(title="生鲜")),
     url(r'^api-auth/', include('rest_framework.urls')),
 
     # path('goods/', good_list, name='goods-list'),
