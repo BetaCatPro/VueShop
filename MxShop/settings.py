@@ -140,6 +140,10 @@ USE_L10N = True
 
 USE_TZ = False
 
+#自定义用户认证系统
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
@@ -156,6 +160,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        #django2.0 不兼容
+        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
     # 'DEFAULT_THROTTLE_CLASSES': (
     #     'rest_framework.throttling.AnonRateThrottle',
@@ -166,3 +172,14 @@ REST_FRAMEWORK = {
     #     'user': '3/minute'
     # }
 }
+
+# import datetime
+# JWT_AUTH = {
+#     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+#     'JWT_AUTH_HEADER_PREFIX': 'JWT',
+# }
+
+APIKEY = ''
+
+#手机号码正则表达式
+REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"

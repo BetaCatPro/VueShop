@@ -66,10 +66,9 @@
         // }
         var that = this;
       login({
-          username:this.userName, //当前页码
+          username:this.userName,
           password:this.parseWord
       }).then((response)=> {
-            console.log(response);
             //本地存储用户信息
             cookie.setCookie('name',this.userName,7);
             cookie.setCookie('token',response.data.token,7)
