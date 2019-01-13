@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-__author__ = 'bobby'
 from rest_framework import permissions
 
 
