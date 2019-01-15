@@ -36,23 +36,23 @@ class LeavingMessageSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(
         default=serializers.CurrentUserDefault()
     )
-    add_time = serializers.DateTimeField(
+    create_time = serializers.DateTimeField(
         read_only=True, format='%Y-%m-%d %H:%M')
 
     class Meta:
         model = UserLeavingMessage
         fields = ("user", "message_type", "subject",
-                  "message", "file", "id", "add_time")
+                  "message", "file", "id", "create_time")
 
 
 class AddressSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(
         default=serializers.CurrentUserDefault()
     )
-    add_time = serializers.DateTimeField(
+    create_time = serializers.DateTimeField(
         read_only=True, format='%Y-%m-%d %H:%M')
 
     class Meta:
         model = UserAddress
         fields = ("id", "user", "province", "city", "district",
-                  "address", "signer_name", "add_time", "signer_mobile")
+                  "address", "signer_name", "create_time", "signer_mobile")
