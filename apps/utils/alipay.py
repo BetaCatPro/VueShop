@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# pip install pycryptodome
-__author__ = 'bobby'
-
 from datetime import datetime
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_v1_5
@@ -132,10 +127,12 @@ if __name__ == "__main__":
 
 
     alipay = AliPay(
+        #沙箱ID
         appid="",
         app_notify_url="http://127.0.0.1:8000/alipay/return/",
-        app_private_key_path="../trade/keys/private_2048.txt",
-        alipay_public_key_path="../trade/keys/alipay_key_2048.txt",  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+        #公，密钥文件
+        app_private_key_path="../trade/keys/app_private_key.pem",
+        alipay_public_key_path="../trade/keys/app_public_key.pem",  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
         debug=True,  # 默认False,
         return_url="http://127.0.0.1:8000/alipay/return/"
     )
