@@ -1,0 +1,6 @@
+/node_modules
+.idea/
+
+/extraFile
+
+package-lock.json
