@@ -70,6 +70,10 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'MxShop.urls'
 
+# AUTHENTICATION_BACKENDS = (
+#     'users.views.CustomBackend',
+# )
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -140,11 +144,6 @@ USE_L10N = True
 
 USE_TZ = False
 
-#自定义用户认证系统
-AUTHENTICATION_BACKENDS = (
-    'users.views.CustomBackend',
-)
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
@@ -160,9 +159,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
-    #     #django2.0 不兼容
-    #     # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
     # 'DEFAULT_THROTTLE_CLASSES': (
     #     'rest_framework.throttling.AnonRateThrottle',
@@ -174,11 +172,11 @@ REST_FRAMEWORK = {
     # }
 }
 
-# import datetime
-# JWT_AUTH = {
-#     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
-#     'JWT_AUTH_HEADER_PREFIX': 'JWT',
-# }
+import datetime
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+}
 
 APIKEY = ''
 
