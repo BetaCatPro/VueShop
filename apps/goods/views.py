@@ -5,11 +5,11 @@ from rest_framework import generics
 from rest_framework import filters
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import viewsets
+from rest_framework.viewsets import GenericViewSet
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.throttling import UserRateThrottle
 
-from rest_framework_extensions.cache.mixins import CacheResponseMixin
+# from rest_framework_extensions.cache.mixins import CacheResponseMixin
 
 from .models import Goods, GoodsCategory, HotSearchWords, Banner
 from .filters import GoodsFilter
@@ -26,7 +26,7 @@ class GoodsPagination(PageNumberPagination):
     max_page_size = 100
 
 
-class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     """
     商品列表页, 分页， 搜索， 过滤， 排序
     """
@@ -36,19 +36,16 @@ class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.Retriev
     pagination_class = GoodsPagination
     # authentication_classes = (TokenAuthentication, )
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
+    # filter_fields = ('shop_price',)
     filter_class = GoodsFilter
     search_fields = ('name', 'goods_brief', 'goods_desc')
     ordering_fields = ('sold_num', 'shop_price')
-
-    def retrieve(self, request, *args, **kwargs):
-        instance = self.get_object()
-        instance.click_num += 1
-        instance.save()
-        serializer = self.get_serializer(instance)
-        return Response(serializer.data)
+    # ^name开头匹配
+    # =name完全匹配
+    # name$表示以什么结尾
 
 
-class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     """
     list:
         商品分类列表数据
