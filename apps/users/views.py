@@ -1,4 +1,5 @@
 from random import choice
+from random import randint
 from django.shortcuts import render
 from django.contrib.auth.backends import ModelBackend
 from django.contrib.auth import get_user_model
@@ -43,15 +44,44 @@ class SmsCodeViewset(CreateModelMixin, GenericViewSet):
     """
     serializer_class = SmsSerializer
 
+    def generator_code(self):
+        """
+        生成四位随机数
+        """
+        for i in range(4):
+            random_str += str(randint(0, 9))
+            # random_str = []
+            # seeds = '0123456789'
+            # random_str.append(choice(seeds))
+            # return ''.join(random_str)
+
+        return random_str
+
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
         mobile = serializer.validated_data['mobile']
-        #发送短信
+        # 发送短信
         yun_pian = YunPian(APIKEY)
-        yun_pian.send_sms(mobile)
+        code = self.generator_code()
+        sms_status = yun_pian.send_sms(code=code, mobile=mobile)
 
-        self.perform_create(serializer)
-        headers = self.get_success_header(serializer.data)
-        return Response(serializer.data, status=status.HTTP_201_CREATED, header)
+        if(sms_status['code'] != 0):
+            return Response({
+                'mobile': sms_status['msg']
+            }, status=status.HTTP_400_BAD_REQUREST)
+        else:
+            code_record = VerifyCode(code=code, mobile=mobile)
+            code_record.save()
+            return Response({
+                'mobile': mobile
+            }, status=status.HTTP_201_CREATED)
+
+
+class UserViewset(CreateModelMixin, GenericViewSet):
+    """
+    注册
+    """
+    serializer_class = UserRegSerializer
+    queryset = User.objects.all()

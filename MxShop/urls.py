@@ -24,18 +24,18 @@ from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 
 from MxShop.settings import MEDIA_ROOT
-from goods.views import GoodsListViewSet, CategoryViewset
-from users.views import SmsCodeViewset
+from goods.views import GoodsListViewSet, CategoryViewset, HotSearchsViewset
+from users.views import SmsCodeViewset, UserViewset
 
 
 router = DefaultRouter()
 #配置goods的url
 router.register(r'v1/api/goods', GoodsListViewSet, base_name="goods")
 router.register(r'v1/api/categorys', CategoryViewset, base_name="categorys")
-router.register(r'codes', SmsCodeViewset, base_name="codes")
+router.register(r'v1/api/codes', SmsCodeViewset, base_name="codes")
+router.register(r'v1/api/hotsearchs', HotSearchsViewset, base_name="hotsearchs")
+router.register(r'v1/api/users', UserViewset, base_name="users")
 """
-router.register(r'hotsearchs', HotSearchsViewset, base_name="hotsearchs")
-router.register(r'users', UserViewset, base_name="users")
 #收藏
 router.register(r'userfavs', UserFavViewset, base_name="userfavs")
 #留言

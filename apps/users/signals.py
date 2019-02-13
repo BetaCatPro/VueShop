@@ -11,4 +11,4 @@ def create_user(sender, instance=None, created=False, **kwargs):
     if created:
         password = instance.password
         instance.set_password(password)
-        instance.sav
+        instance.save()
