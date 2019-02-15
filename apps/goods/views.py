@@ -44,6 +44,13 @@ class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, Generic
     # =name完全匹配
     # name$表示以什么结尾
 
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.click_num += 1
+        instance.save()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
+
 
 class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     """
@@ -56,9 +63,9 @@ class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
     serializer_class = CategorySerializer
 
 
-class HotSearchsViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+class HotSearchsViewset(mixins.ListModelMixin, GenericViewSet):
     """
     获取热搜词列表
     """
     queryset = HotSearchWords.objects.all().order_by("-index")
-    serializer_class = HotWords
+    serializer_class = HotWordsSerializer

@@ -21,8 +21,10 @@ class UserFavViewset(mixins.CreateModelMixin, mixins.ListModelMixin, mixins.Retr
     """
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+    # serializer_class = UserFavSerializer
     lookup_field = "goods_id"
 
+    #重载方法，get时只获取当前用户收藏（因为在permission中get是安全方法,不会默认验证）
     def get_queryset(self):
         return UserFav.objects.filter(user=self.request.user)
 
@@ -39,42 +41,3 @@ class UserFavViewset(mixins.CreateModelMixin, mixins.ListModelMixin, mixins.Retr
             return UserFavSerializer
 
         return UserFavSerializer
-
-
-class LeavingMessageViewset(mixins.ListModelMixin, mixins.DestroyModelMixin, mixins.CreateModelMixin,
-                            viewsets.GenericViewSet):
-    """
-    list:
-        获取用户留言
-    create:
-        添加留言
-    delete:
-        删除留言功能
-    """
-
-    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
-    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
-    serializer_class = LeavingMessageSerializer
-
-    def get_queryset(self):
-        return UserLeavingMessage.objects.filter(user=self.request.user)
-
-
-class AddressViewset(viewsets.ModelViewSet):
-    """
-    收货地址管理
-    list:
-        获取收货地址
-    create:
-        添加收货地址
-    update:
-        更新收货地址
-    delete:
-        删除收货地址
-    """
-    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
-    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
-    serializer_class = AddressSerializer
-
-    def get_queryset(self):
-        return UserAddress.objects.filter(user=self.request.user)
