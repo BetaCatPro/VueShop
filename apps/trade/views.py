@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-from rest_framework import viewsets
+from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
@@ -12,7 +12,7 @@ from utils.permissions import IsOwnerOrReadOnly
 from .models import ShoppingCart, OrderInfo, OrderGoods
 
 
-class ShoppingCartViewset(viewsets.ModelViewSet):
+class ShoppingCartViewset(ModelViewSet):
     """
     购物车功能
     list:
@@ -23,9 +23,7 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
         删除购物记录
     """
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
-    authentication_classes = (
-        JSONWebTokenAuthentication, SessionAuthentication)
-    serializer_class = ShopCartSerializer
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
     lookup_field = "goods_id"
 
     def perform_create(self, serializer):
@@ -59,7 +57,7 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
         return ShoppingCart.objects.filter(user=self.request.user)
 
 
-class OrderViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin, viewsets.GenericViewSet):
+class OrderViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin, GenericViewSet):
     """
     订单管理
     list:
