@@ -10,6 +10,7 @@ from django.shortcuts import redirect
 from .serializers import ShopCartSerializer, OrderDetailSerializer, ShopCartDetailSerializer, OrderSerializer
 from utils.permissions import IsOwnerOrReadOnly
 from .models import ShoppingCart, OrderInfo, OrderGoods
+from MxShop.settings import appid
 
 
 class ShoppingCartViewset(ModelViewSet):
@@ -102,6 +103,7 @@ from rest_framework.response import Response
 
 class AlipayView(APIView):
 
+    #在网页上支付后
     def get(self, request):
         """
         处理支付宝的return_url返回
@@ -115,12 +117,12 @@ class AlipayView(APIView):
         sign = processed_dict.pop("sign", None)
 
         alipay = AliPay(
-            appid="",
-            app_notify_url="http://127.0.0.1:8000/alipay/return/",
-            app_private_key_path=private_key_path,
-            alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
-            debug=True,  # 默认False,
-            return_url="http://127.0.0.1:8000/alipay/return/"
+            appid = appid,
+            app_notify_url = "http://127.0.0.1:8080/alipay/return/",
+            app_private_key_path = private_key_path,
+            alipay_public_key_path = ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+            debug = True,  # 默认False,
+            return_url = "http://127.0.0.1:8080/alipay/return/"
         )
 
         verify_re = alipay.verify(processed_dict, sign)
@@ -144,6 +146,7 @@ class AlipayView(APIView):
             response = redirect("index")
             return response
 
+    #通过手机支付后
     def post(self, request):
         """
         处理支付宝的notify_url
@@ -157,12 +160,12 @@ class AlipayView(APIView):
         sign = processed_dict.pop("sign", None)
 
         alipay = AliPay(
-            appid="",
-            app_notify_url="http://127.0.0.1:8000/alipay/return/",
+            appid=appid,
+            app_notify_url="http://127.0.0.1:8080/alipay/return/",
             app_private_key_path=private_key_path,
             alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
             debug=True,  # 默认False,
-            return_url="http://127.0.0.1:8000/alipay/return/"
+            return_url="http://127.0.0.1:8080/alipay/return/"
         )
 
         verify_re = alipay.verify(processed_dict, sign)

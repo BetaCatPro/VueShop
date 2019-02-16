@@ -46,6 +46,7 @@ class AliPay(object):
         }
 
         biz_content.update(kwargs)
+        #生成消息格式
         data = self.build_body("alipay.trade.page.pay", biz_content, self.return_url)
         return self.sign_data(data)
 
@@ -67,6 +68,7 @@ class AliPay(object):
         return data
 
     def sign_data(self, data):
+        #签名时去掉sign字段
         data.pop("sign", None)
         # 排序后的字符串
         unsigned_items = self.ordered_data(data)
@@ -120,33 +122,33 @@ class AliPay(object):
 
 
 if __name__ == "__main__":
-    return_url = 'http://127.0.0.1:8000/?total_amount=100.00&timestamp=2017-08-15+23%3A53%3A34&sign=e9E9UE0AxR84NK8TP1CicX6aZL8VQj68ylugWGHnM79zA7BKTIuxxkf%2FvhdDYz4XOLzNf9pTJxTDt8tTAAx%2FfUAJln4WAeZbacf1Gp4IzodcqU%2FsIc4z93xlfIZ7OLBoWW0kpKQ8AdOxrWBMXZck%2F1cffy4Ya2dWOYM6Pcdpd94CLNRPlH6kFsMCJCbhqvyJTflxdpVQ9kpH%2B%2Fhpqrqvm678vLwM%2B29LgqsLq0lojFWLe5ZGS1iFBdKiQI6wZiisBff%2BdAKT9Wcao3XeBUGigzUmVyEoVIcWJBH0Q8KTwz6IRC0S74FtfDWTafplUHlL%2Fnf6j%2FQd1y6Wcr2A5Kl6BQ%3D%3D&trade_no=2017081521001004340200204115&sign_type=RSA2&auth_app_id=2016080600180695&charset=utf-8&seller_id=2088102170208070&method=alipay.trade.page.pay.return&app_id=2016080600180695&out_trade_no=20170202185&version=1.0'
-    o = urlparse(return_url)
-    query = parse_qs(o.query)
-    processed_query = {}
-    ali_sign = query.pop("sign")[0]
+    #支付完成后传回的url，需要验证合法性
+    # return_url = 'http://127.0.0.1:8080/?total_amount=100.00&timestamp=2017-08-15+23%3A53%3A34&sign=e9E9UE0AxR84NK8TP1CicX6aZL8VQj68ylugWGHnM79zA7BKTIuxxkf%2FvhdDYz4XOLzNf9pTJxTDt8tTAAx%2FfUAJln4WAeZbacf1Gp4IzodcqU%2FsIc4z93xlfIZ7OLBoWW0kpKQ8AdOxrWBMXZck%2F1cffy4Ya2dWOYM6Pcdpd94CLNRPlH6kFsMCJCbhqvyJTflxdpVQ9kpH%2B%2Fhpqrqvm678vLwM%2B29LgqsLq0lojFWLe5ZGS1iFBdKiQI6wZiisBff%2BdAKT9Wcao3XeBUGigzUmVyEoVIcWJBH0Q8KTwz6IRC0S74FtfDWTafplUHlL%2Fnf6j%2FQd1y6Wcr2A5Kl6BQ%3D%3D&trade_no=2017081521001004340200204115&sign_type=RSA2&auth_app_id=2016080600180695&charset=utf-8&seller_id=2088102170208070&method=alipay.trade.page.pay.return&app_id=2016080600180695&out_trade_no=20170202185&version=1.0'
+    # o = urlparse(return_url)
+    # query = parse_qs(o.query)
+    # processed_query = {}
+    # ali_sign = query.pop("sign")[0]
 
+    # for key, value in query.items():
+    #     processed_query[key] = value[0]
+    # print (alipay.verify(processed_query, ali_sign))
 
     alipay = AliPay(
         #沙箱ID
         appid=appid,
-        app_notify_url="http://127.0.0.1:8000/alipay/return/",
+        app_notify_url="http://127.0.0.1:8080/alipay/return/",
         #公，密钥文件
         app_private_key_path="../trade/keys/app_private_key.pem",
         alipay_public_key_path="../trade/keys/app_public_key.pem",  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
         debug=True,  # 默认False,
-        return_url="http://127.0.0.1:8000/alipay/return/"
+        return_url="http://127.0.0.1:8080/alipay/return/"
     )
-
-    for key, value in query.items():
-        processed_query[key] = value[0]
-    print (alipay.verify(processed_query, ali_sign))
 
     url = alipay.direct_pay(
         subject="测试订单2",
         out_trade_no="20170202sss",
         total_amount=100,
-        return_url="http://127.0.0.1:8000/alipay/return/"
+        return_url="http://127.0.0.1:8080/alipay/return/"
     )
     re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(data=url)
 

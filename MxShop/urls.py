@@ -27,6 +27,7 @@ from MxShop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewset, HotSearchsViewset
 from users.views import SmsCodeViewset, UserViewset
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
+from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
 
 
 router = DefaultRouter()
@@ -42,11 +43,11 @@ router.register(r'v1/api/userfavs', UserFavViewset, base_name="userfavs")
 router.register(r'v1/api/messages', LeavingMessageViewset, base_name="messages")
 #收货地址
 router.register(r'v1/api/address', AddressViewset, base_name="address")
-"""
 #购物车url
 router.register(r'v1/api/shopcarts', ShoppingCartViewset, base_name="shopcarts")
 #订单相关url
 router.register(r'v1/api/orders', OrderViewset, base_name="orders")
+"""
 #轮播图url
 router.register(r'v1/api/banners', BannerViewset, base_name="banners")
 #首页商品系列数据
@@ -70,6 +71,7 @@ urlpatterns = [
 
     # path('goods/', good_list, name='goods-list'),
     path('', include(router.urls)),
+    path('alipay/return/', AlipayView.as_view(), name='alipay')
 
     re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
 ]
