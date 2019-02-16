@@ -17,16 +17,19 @@ class ShopCartDetailSerializer(serializers.ModelSerializer):
 
 
 class ShopCartSerializer(serializers.Serializer):
-    user = serializers.HiddenField(
-        default=serializers.CurrentUserDefault()
-    )
-    nums = serializers.IntegerField(required=True, label="数量", min_value=1,
-                                    error_messages={
-                                        "min_value": "商品数量不能小于一",
-                                        "required": "请选择购买数量"
-                                    })
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    nums = serializers.IntegerField(
+        required=True,
+        label="数量",
+        min_value=1,
+        error_messages={
+            "min_value": "商品数量不能小于一",
+            "required": "请选择购买数量"
+        })
     goods = serializers.PrimaryKeyRelatedField(
-        required=True, queryset=Goods.objects.all())
+        required=True,
+        queryset=Goods.objects.all()
+    )
 
     def create(self, validated_data):
         user = self.context["request"].user

@@ -8,6 +8,8 @@ from urllib.parse import urlparse, parse_qs
 from urllib.request import urlopen
 from base64 import decodebytes, encodebytes
 
+from MxShop.settings import appid
+
 import json
 
 
@@ -15,8 +17,7 @@ class AliPay(object):
     """
     支付宝支付接口
     """
-    def __init__(self, appid, app_notify_url, app_private_key_path,
-                 alipay_public_key_path, return_url, debug=False):
+    def __init__(self, appid, app_notify_url, app_private_key_path, alipay_public_key_path, return_url, debug=False):
         self.appid = appid
         self.app_notify_url = app_notify_url
         self.app_private_key_path = app_private_key_path
@@ -128,7 +129,7 @@ if __name__ == "__main__":
 
     alipay = AliPay(
         #沙箱ID
-        appid="",
+        appid=appid,
         app_notify_url="http://127.0.0.1:8000/alipay/return/",
         #公，密钥文件
         app_private_key_path="../trade/keys/app_private_key.pem",

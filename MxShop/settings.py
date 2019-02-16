@@ -178,10 +178,14 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'JWT',
 }
 
+#云片网APIKEY
 APIKEY = ''
 
 #手机号码正则表达式
 REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
+
+#沙箱ID
+appid=""
 
 #支付宝相关配置
 private_key_path = os.path.join(BASE_DIR, 'app/trade/keys/app_private_key.pem')
