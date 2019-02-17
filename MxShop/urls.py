@@ -25,7 +25,7 @@ from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 
 from MxShop.settings import MEDIA_ROOT
-from goods.views import GoodsListViewSet, CategoryViewset, HotSearchsViewset
+from goods.views import GoodsListViewSet, CategoryViewset, HotSearchsViewset, BannerViewset, IndexCategoryViewset
 from users.views import SmsCodeViewset, UserViewset
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
@@ -48,7 +48,6 @@ router.register(r'v1/api/address', AddressViewset, base_name="address")
 router.register(r'v1/api/shopcarts', ShoppingCartViewset, base_name="shopcarts")
 #订单相关url
 router.register(r'v1/api/orders', OrderViewset, base_name="orders")
-"""
 #轮播图url
 router.register(r'v1/api/banners', BannerViewset, base_name="banners")
 #首页商品系列数据
@@ -58,7 +57,7 @@ router.register(r'v1/api/indexgoods', IndexCategoryViewset, base_name="indexgood
 #     'get': 'list',
 #     'post': 'create'
 # })
-"""
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),

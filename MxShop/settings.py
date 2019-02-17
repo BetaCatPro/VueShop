@@ -166,10 +166,16 @@ REST_FRAMEWORK = {
     #     'rest_framework.throttling.AnonRateThrottle',
     #     'rest_framework.throttling.UserRateThrottle'
     # ),
-    # 'DEFAULT_THROTTLE_RATES': {
-    #     'anon': '2/minute',
-    #     'user': '3/minute'
-    # }
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '2/minute',
+        'user': '3/minute'
+    }
+}
+
+#缓存
+REST_FRAMEWORK_EXTENSIONS = {
+    #10s后失效
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 10
 }
 
 import datetime
@@ -190,3 +196,15 @@ appid="2016092000555410"
 #支付宝相关配置
 private_key_path = os.path.join(BASE_DIR, 'apps/trade/keys/app_private_key.pem')
 ali_pub_key_path = os.path.join(BASE_DIR, 'apps/trade/keys/app_public_key.pem')
+
+
+#redis缓存
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}

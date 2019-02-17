@@ -27,6 +27,7 @@ class UserFavViewset(mixins.CreateModelMixin, mixins.ListModelMixin, mixins.Retr
     def get_queryset(self):
         return UserFav.objects.filter(user=self.request.user)
 
+    #改用信号量
     # def perform_create(self, serializer):
     #     instance = serializer.save()
     #     goods = instance.goods

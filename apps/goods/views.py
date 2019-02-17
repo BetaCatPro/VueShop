@@ -9,7 +9,8 @@ from rest_framework.viewsets import GenericViewSet
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.throttling import UserRateThrottle
 
-# from rest_framework_extensions.cache.mixins import CacheResponseMixin
+#缓存（内存级别）
+from rest_framework_extensions.cache.mixins import CacheResponseMixin
 
 from .models import Goods, GoodsCategory, HotSearchWords, Banner
 from .filters import GoodsFilter
@@ -26,11 +27,11 @@ class GoodsPagination(PageNumberPagination):
     max_page_size = 100
 
 
-class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
+class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     """
     商品列表页, 分页， 搜索， 过滤， 排序
     """
-    # throttle_classes = (UserRateThrottle, )
+    throttle_classes = (UserRateThrottle, )
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
@@ -69,3 +70,19 @@ class HotSearchsViewset(mixins.ListModelMixin, GenericViewSet):
     """
     queryset = HotSearchWords.objects.all().order_by("-index")
     serializer_class = HotWordsSerializer
+
+
+class BannerViewset(mixins.ListModelMixin, GenericViewSet):
+    """
+    轮播图
+    """
+    queryset = Banner.objects.all().order_by("index")
+    serializer_class = BannerSerializer
+
+
+class IndexCategoryViewset(mixins.ListModelMixin, GenericViewSet):
+    """
+    首页商品分类数据
+    """
+    queryset = GoodsCategory.objects.filter(is_tab=True, name__in=["生鲜食品", "酒水饮料"])
+    serializer_class = IndexCategorySerializer

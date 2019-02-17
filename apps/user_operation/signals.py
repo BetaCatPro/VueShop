@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-__author__ = 'bobby'
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token

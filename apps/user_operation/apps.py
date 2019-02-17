@@ -6,4 +6,4 @@ class UserOperationConfig(AppConfig):
     verbose_name = "用户操作管理"
 
     def ready(self):
-        # import user_operation.signals
+        import user_operation.signals
