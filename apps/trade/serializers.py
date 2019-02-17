@@ -104,7 +104,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
     def get_alipay_url(self, obj):
         alipay = AliPay(
-            appid="",
+            appid=appid,
             app_notify_url="http://127.0.0.1:8080/alipay/return/",
             app_private_key_path=private_key_path,
             alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
@@ -117,8 +117,7 @@ class OrderSerializer(serializers.ModelSerializer):
             out_trade_no=obj.order_sn,
             total_amount=obj.order_mount,
         )
-        re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(
-            data=url)
+        re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(data=url)
 
         return re_url
 

@@ -18,6 +18,7 @@ import xadmin
 from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.static import serve
+from django.views.generic import TemplateView
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
@@ -64,14 +65,16 @@ urlpatterns = [
     path('ueditor/', include('DjangoUeditor.urls')),
     re_path(r'docs/', include_docs_urls(title="生鲜")),
     re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    # drf自带的token认证模式，弊端:token永久有效
+    # drf自带的token认证模式,弊端:token永久有效,并且会生成一张数据表存放token
     re_path(r'^api-token-auth/', views.obtain_auth_token),
     # jwt的认证接口
     re_path(r'^login/', obtain_jwt_token),
 
     # path('goods/', good_list, name='goods-list'),
     path('', include(router.urls)),
-    path('alipay/return/', AlipayView.as_view(), name='alipay')
+    #使用django代理
+    path('index/', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('alipay/return/', AlipayView.as_view(), name='alipay'),
 
     re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
 ]

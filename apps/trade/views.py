@@ -69,8 +69,7 @@ class OrderViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.Crea
         新增订单
     """
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
-    authentication_classes = (
-        JSONWebTokenAuthentication, SessionAuthentication)
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
     serializer_class = OrderSerializer
 
     def get_queryset(self):
@@ -128,9 +127,10 @@ class AlipayView(APIView):
         verify_re = alipay.verify(processed_dict, sign)
 
         if verify_re is True:
+            # 支付宝接口改版，同步跳转url中不带有trade_status参数，不更新订单状态，只做跳转
             order_sn = processed_dict.get('out_trade_no', None)
             trade_no = processed_dict.get('trade_no', None)
-            trade_status = processed_dict.get('trade_status', None)
+            trade_status = 'TRADE_SUCCESS'
 
             existed_orders = OrderInfo.objects.filter(order_sn=order_sn)
             for existed_order in existed_orders:
@@ -178,11 +178,13 @@ class AlipayView(APIView):
             existed_orders = OrderInfo.objects.filter(order_sn=order_sn)
             for existed_order in existed_orders:
                 order_goods = existed_order.goods.all()
+                #销量增加
                 for order_good in order_goods:
                     goods = order_good.goods
                     goods.sold_num += order_good.goods_num
                     goods.save()
 
+                #更新数据库
                 existed_order.pay_status = trade_status
                 existed_order.trade_no = trade_no
                 existed_order.pay_time = datetime.now()
